@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1</title>
+    <title>Styled Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-       <div class="top">
-        <h1>Task 1</h1>
-        <p>This is a simple HTML page for Task 1.</p>
-       </div>
-       <div class="middle">
-        <p>
-            At ApexPlanet Software Pvt. Ltd., we are dedicated to driving innovation and excellence in the realm of
-            digital solutions. Founded with a vision to empower businesses through cutting-edge technology, we
-            specialize in delivering top-notch web development and app development services tailored to meet the
-            unique needs of our clients.
-        </p>
-       </div>
-        <div class="bottom">
-            <img src="apexplanet-logo.png" />
-        <a href="https://apexplanet.in/">Vist ApexPlanet</a>
-        </div>
-        <div class="btn">
-            <button id="This">click me</button>
-        </div>
-    </main>
+    <div class="form-container">
+        <h2 class="form-title">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                <small class="form-text">Please enter your full name.</small>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                <small class="form-text">Please enter a valid email address.</small>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
+

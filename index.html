@@ -3,44 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAHUL RAJ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Rahul Raj - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="heading">About Rahul Raj</h1>
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Rahul Raj</a>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#todo-app" class="nav-link">To-Do List</a></li>
+                    <li class="nav-item"><a href="#product-listing" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <div class="grid">
-            <div class="card">
-                <img src="rahu;l photo.jpg" alt="Rahul Raj">
-                <h2>Rahul Raj</h2>
+    <main>
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <img src="rahul.jpg" alt="  Rahul Raj" class="profile-img">
+            <div class="about-content">
                 <p>
-                    5th Semester Student, CSE (AI) <br>
-                    B.Tech, Motihari College of Engineering, Motihari
+                    Hello! I'm Rahul Raj, a dedicated and enthusiastic 5th-semester student pursuing my B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence at Motihari College of Engineering, Motihari.
+                </p>
+                <p>
+                    I am passionate about exploring new technologies and expanding my skillset, particularly in web development. I'm currently enhancing my skills through a 45-day online internship in Web Development at Apex Planet. This experience is providing me with valuable hands-on knowledge and deepening my understanding of modern web technologies.
+                </p>
+                <p>
+                    My goal is to leverage my AI background with strong web development skills to build innovative and impactful applications. I am eager to learn, contribute, and grow in the ever-evolving field of technology.
                 </p>
             </div>
-
-            <div class="card internship-card">
-                <h2>Internship Details</h2>
-                <p>
-                    Currently, I am undergoing a 45-day online internship focused on Web Development at Apex Planet.
-                </p>
-                <p class="font-medium">
-                    This is Task 3 of the internship.
-                </p>
+            <h3 class="section-title" style="font-size: 1.8rem; margin-top: 60px; margin-bottom: 30px;">My Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">Machine Learning Basics</div>
+                <div class="skill-item">Web Development</div>
+                <div class="skill-item">Responsive Design</div>
             </div>
-        </div>
+        </section>
 
-        <div class="description-section">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm Rahul Raj, a dedicated and enthusiastic 5th-semester student pursuing my B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence. I am currently studying at Motihari College of Engineering, Motihari. I am passionate about exploring new technologies and expanding my skillset.
-            </p>
-            <p class="intrest">
-                I am particularly interested in WEB DEVELOPMENT and Machine Learning, which is why I'm excited to be a part of the 45-day online internship at Apex Planet. This internship is providing me with valuable hands-on experience and helping me to deepen my understanding of web development concepts. I am eager to learn and contribute to the field of technology.
-            </p>
-        </div>
-    </div>
+        <section id="projects" class="section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://placehold.co/300x200/2980b9/ffffff?text=Project+1" alt="Project 1" class="project-img">
+                    <div class="project-info">
+                        <h3>Dynamic Image Gallery</h3>
+                        <p>A web application allowing users to dynamically add and remove images, showcasing interactive DOM manipulation and basic form handling.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/300x200/2980b9/ffffff?text=Project+2" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Basic Calculator</h3>
+                        <p>A simple calculator web application built with HTML, CSS, and JavaScript, demonstrating fundamental arithmetic operations and UI design.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="todo-app" class="section">
+            <h2 class="section-title">My To-Do List</h2>
+            <div class="todo-input-container">
+                <input type="text" id="todo-input" class="todo-input" placeholder="Add a new task...">
+                <button id="add-todo-button" class="add-todo-button">Add Task</button>
+            </div>
+            <ul id="todo-list" class="todo-list">
+                </ul>
+        </section>
+
+        <section id="product-listing" class="section">
+            <h2 class="section-title">Product Catalog</h2>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="price-filter">Max Price:</label>
+                    <input type="number" id="price-filter" placeholder="e.g., 500">
+                </div>
+                <div class="control-group">
+                    <label for="sort-by">Sort By:</label>
+                    <select id="sort-by">
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="price-asc">Price (Low to High)</option>
+                        <option value="price-desc">Price (High to Low)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="product-grid" class="product-grid">
+                </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
